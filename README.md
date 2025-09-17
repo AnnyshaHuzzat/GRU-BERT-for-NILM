@@ -8,4 +8,5 @@ Run the following command to train the model. Dataset, the name of the appliance
 `python train.py`
 # Performance
 # Model Architecture
-![Alt text](path/to/image.png)
+In this work, we propose a novel improved hybrid deep learning NILM approach based on GRU and BERT, which performs per-appliance prediction of both the power consumption and ON/OFF status of individual appliances. We develop two models that separately combine BERT with unidirectional and bidirectional variants of GRU. Our proposed model is illustrated as follow: 
+![Bi-GRU+BERT Model Architecture](path/to/image.png)
