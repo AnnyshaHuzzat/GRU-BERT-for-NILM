@@ -3,7 +3,8 @@ from dataloader import *
 from trainer import *
 from config import *
 from utils import *
-from model import GRUBERT #change to biGRUBERT to run the bidirectional GRU version
+from GRU_BERT_model import GRUBERT 
+#from Bi-GRU_BERT_model import biGRUBERT #change to biGRUBERT to run the bidirectional GRU version
 
 import argparse
 import torch
