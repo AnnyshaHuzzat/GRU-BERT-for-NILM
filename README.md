@@ -6,7 +6,7 @@ The UK Domestic Appliance-Level ELECTRIcity [(UK-DALE)](https://arxiv.org/abs/14
 The Reference Energy Disaggregation Dataset [(REDD)](https://github.com/inesylla/energy-disaggregation-DL) is a benchmark NILM dataset widely used for evaluating appliance-level energy disaggregation. For the REDD dataset, we use the pre-processed data where thresholds and parameters are chosen based on experimental settings.
 
 # Training Process
-Run the following command to train the model. Dataset, the name of the appliance and number of epochs should be given as input. The hyperparameters can be tuned my modifying the utils.py file. 
+Run the following command to train the model. Dataset, the name of the appliance and number of epochs should be given as input. The hyperparameters can be tuned my modifying the utils.py file.
 
 `python train.py`
 
@@ -16,3 +16,4 @@ In this work, we propose a novel improved hybrid deep learning NILM approach bas
 ![Bi-GRU+BERT Model Architecture](biGRU+BERT.png)
 
 # Performance
+Our GRU+BERT and Bi-GRU+BERT models boost NILM performance by combining GRU’s temporal learning with BERT’s contextual attention. Bi-GRU+BERT performs best with fewer training epochs, while GRU+BERT delivers more stable results with longer training. On the fridge, both models reached F1 = 0.871 vs. 0.801 for BERT4NILM (≈8.7% gain). For the microwave, GRU+BERT hit 0.553 and Bi-GRU+BERT 0.515, far above the CNN baseline of 0.341 (up to 62% gain). On the washing machine, GRU+BERT achieved 0.877 vs. 0.835 for ELECTRIcity. Overall, Bi-GRU+BERT excels in shorter training, while GRU+BERT provides stronger long-term stability.
