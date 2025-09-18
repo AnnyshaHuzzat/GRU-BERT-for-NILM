@@ -17,3 +17,12 @@ In this work, we propose a novel improved hybrid deep learning NILM approach bas
 
 # Performance
 Our GRU+BERT and Bi-GRU+BERT models boost NILM performance by combining GRU’s temporal learning with BERT’s contextual attention. Bi-GRU+BERT performs best with fewer training epochs, while GRU+BERT delivers more stable results with longer training. On the fridge, both models reached F1 = 0.871 vs. 0.801 for BERT4NILM (≈8.7% gain). For the microwave, GRU+BERT hit 0.553 and Bi-GRU+BERT 0.515, far above the CNN baseline of 0.341 (up to 62% gain). On the washing machine, GRU+BERT achieved 0.877 vs. 0.835 for ELECTRIcity. Overall, Bi-GRU+BERT excels in shorter training, while GRU+BERT provides stronger long-term stability.
+
+# Citation
+If you find this work useful, please consider citing our paper:
+
+(Details will be updated soon)
+
+# Acknowledgement
+
+This implementation builds upon the [BERT4NILM](https://github.com/Yueeeeeeee/BERT4NILM/) framework by Yue et al. We sincerely thank the authors for their valuable contribution, which served as the foundation and inspiration for our work.
