@@ -3,7 +3,9 @@ This repository contains the implementation of GRU-BERT models for Non-Intrusive
 
 # Datasets
 The UK Domestic Appliance-Level ELECTRIcity [(UK-DALE)](https://arxiv.org/abs/1404.0284) dataset provides detailed energy usage data from five UK households, including both aggregate mains and individual appliance readings. We use low-frequency data for five appliances namely, refrigerator, washer-dryer, microwave, dishwasher, and kettle. All signals are resampled to six-second intervals with forward-filling applied for gaps under three minutes, ensuring temporal alignment between mains and appliance-level data.
-The Reference Energy Disaggregation Dataset [(REDD)](https://github.com/inesylla/energy-disaggregation-DL) is a benchmark NILM dataset widely used for evaluating appliance-level energy disaggregation. For the REDD dataset, we use the pre-processed data where thresholds and parameters are chosen based on experimental settings.
+The Reference Energy Disaggregation Dataset [(REDD)](https://zicokolter.com/publications/kolter2011redd.pdf) is a benchmark NILM dataset widely used for evaluating appliance-level energy disaggregation. For the REDD dataset, we use the pre-processed data where thresholds and parameters are chosen based on experimental settings.
+
+Download the datasets here: [UK-DALE](https://jack-kelly.com/data/), [REDD]((https://github.com/inesylla/energy-disaggregation-DL)).
 
 # Training Process
 Run the following command to train the model. Dataset, the name of the appliance and number of epochs should be given as input. The hyperparameters can be tuned my modifying the utils.py file.
