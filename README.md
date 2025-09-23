@@ -23,7 +23,7 @@ Our GRU+BERT and Bi-GRU+BERT models boost NILM performance by combining GRU’s 
 # Citation
 If you find this work useful, please consider citing our paper:
 
-(Details will be updated soon)
+Huzzat, A., Khwaja, A. S., Alnoman, A. A., Adhikari, B., Anpalagan, A., & Woungang, I. (2025). GRU-BERT for NILM: A Hybrid Deep Learning Architecture for Load Disaggregation. AI, 6(9), 238. https://doi.org/10.3390/ai6090238
 
 # Acknowledgement
 
